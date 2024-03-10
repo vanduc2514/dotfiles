@@ -1,5 +1,9 @@
+- tap:
+    - homebrew/cask-fonts
+
 - cask:
     - visual-studio-code
+    - font-jetbrains-mono
 
 - link:
     ~/Library/Application Support/Code/User/settings.json: settings.json
@@ -7,4 +11,4 @@
 
 - shell:
     - description: Install VSCode extensions
-      command: while IFS= read -r extension || [ -n "$extension" ]; do ./code --install-extension "$extension"; done < extensions.txt
+      command: while IFS= read -r extension || [ -n "$extension" ]; do code --install-extension "$extension"; done < extensions.txt
