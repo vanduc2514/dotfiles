@@ -16,6 +16,7 @@
     - includes:
         code: conf.macos.yaml
         docker: conf.macos.yaml
+        others: conf.macos.yaml
 
 - ifanylinux:
     - includes:
