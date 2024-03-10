@@ -1,11 +1,7 @@
 - link:
     ~/.gitconfig:
-      relink: true
-      force: true
       path: .gitconfig
 
 - shell:
-    - [
-        Create .gitconfig.local for machine specific setting,
-        touch ~/.gitconfig.local
-      ]
+    - description: Create local git config
+      command: touch ~/.gitconfig.local

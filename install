@@ -12,6 +12,8 @@ for module in "${MODULES_DIR}"/*; do
     git submodule update --init --recursive "${module}"
 done
 
+export $(cat macos.env)
+
 "${MODULES_DIR}/dotbot/bin/dotbot" -d "${BASE_DIR}" -c install.conf.yaml \
     -p "${MODULES_DIR}/dotbot-ifplatform/ifplatform.py" \
     -p "${MODULES_DIR}/dotbot-includes/includes.py" \
