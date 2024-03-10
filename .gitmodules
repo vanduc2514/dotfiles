@@ -4,3 +4,6 @@
 [submodule ".dotbot/dotbot-includes"]
 	path = .dotbot/dotbot-includes
 	url = https://github.com/vanduc2514/dotbot-includes.git
+[submodule ".dotbot/dotbot-ifplatform"]
+	path = .dotbot/dotbot-ifplatform
+	url = https://github.com/vanduc2514/dotbot-ifplatform.git
