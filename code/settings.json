@@ -1,0 +1,94 @@
+// Override VSCode defaults
+{
+  // Autosave
+  "files.autoSave": "afterDelay",
+  // Telementry
+  "telemetry.telemetryLevel": "all",
+  "redhat.telemetry.enabled": false,
+  // Workbench
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.tree.indent": 20,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // Editor
+  "editor.fontSize": 14,
+  "editor.lineHeight": 28,
+  "editor.fontFamily": "JetBrains Mono, Menlo, Cascadia Mono, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": "'ss01','ss05','dlig'",
+  "editor.semanticTokenColorCustomizations": {
+    // https://github.com/material-theme/vsc-material-theme/discussions/1274
+    "[Material Theme *]": {
+      "rules": {
+        "interface": {
+          "foreground": "#C3E88D",
+          "fontStyle": "italic"
+        },
+        "class.abstract": "#C3E88D",
+        "annotationMember": "#EEFFFF"
+      }
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    // https://github.com/material-theme/vsc-material-theme/discussions/1274
+    "[Material Theme*]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "keyword.control.java",
+            "keyword.control.try.java",
+            "keyword.control.catch.java",
+            "keyword.control.throw.java",
+            "keyword.control.new.java",
+            "storage.type.primitive.java",
+            "storage.modifier.java"
+          ],
+          "settings": {
+            "foreground": "#C792EA",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "keyword.other.package.java",
+            "keyword.other.import.java",
+            "punctuation.definition.annotation.java"
+          ],
+          "settings": {
+            "foreground": "#C792EA"
+          }
+        }
+      ]
+    }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Terminal
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.lineHeight": 1.5,
+  // Git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  // Kubernetes
+  "vscode-kubernetes.log-viewer.follow": true,
+  "vscode-kubernetes.log-viewer.timestamp": false,
+  "vscode-kubernetes.log-viewer.since": -1,
+  "vscode-kubernetes.log-viewer.tail": -1,
+  "vscode-kubernetes.log-viewer.destination": "Terminal",
+  "vscode-kubernetes.log-viewer.wrap": false,
+  // Formatter
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "mwpb.java-prettier-formatter"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Java Language Specific Settings
+  "java.server.launchMode": "LightWeight",
+  "java.maven.downloadSources": true,
+  "java.dependency.syncWithFolderExplorer": true,
+  "java.dependency.packagePresentation": "hierarchical"
+}

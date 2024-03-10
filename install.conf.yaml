@@ -1,1 +1,22 @@
-- shell: ["echo Hello"]
+- defaults:
+    link:
+      relink: true
+      force: true
+    shell:
+      quiet: true
+      stderr: true
+
+- ifany:
+    - includes:
+        git: conf.any.yaml
+        kubectl: conf.any.yaml
+        helm: conf.any.yaml
+
+- ifmacos:
+    - includes:
+        code: conf.macos.yaml
+        docker: conf.macos.yaml
+
+- ifanylinux:
+    - includes:
+        docker: conf.anylinux.yaml

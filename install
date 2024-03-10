@@ -13,4 +13,6 @@ for module in "${MODULES_DIR}"/*; do
 done
 
 "${MODULES_DIR}/dotbot/bin/dotbot" -d "${BASE_DIR}" -c install.conf.yaml \
-    -p "${MODULES_DIR}/dotbot-includes/includes.py"
+    -p "${MODULES_DIR}/dotbot-ifplatform/ifplatform.py" \
+    -p "${MODULES_DIR}/dotbot-includes/includes.py" \
+    -p "${MODULES_DIR}/dotbot-brew/brew.py"

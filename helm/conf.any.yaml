@@ -1,0 +1,7 @@
+- shell:
+  - description: Install helm
+    command: |
+      curl -sSL "https://get.helm.sh/helm-${HELM_VERSION}-${OS}-${ARCH}.tar.gz" | tar -xz
+      sudo mv "${OS}-${ARCH}"/helm /usr/local/bin/helm
+      rm -r "${OS}-${ARCH}"
+    stdout: true

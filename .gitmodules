@@ -7,3 +7,6 @@
 [submodule ".dotbot/dotbot-ifplatform"]
 	path = .dotbot/dotbot-ifplatform
 	url = https://github.com/vanduc2514/dotbot-ifplatform.git
+[submodule ".dotbot/dotbot-brew"]
+	path = .dotbot/dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git

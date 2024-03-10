@@ -1,0 +1,10 @@
+- cask:
+    - visual-studio-code
+
+- link:
+    ~/Library/Application Support/Code/User/settings.json: settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: keybindings.macos.json
+
+- shell:
+    - description: Install VSCode extensions
+      command: while IFS= read -r extension || [ -n "$extension" ]; do ./code --install-extension "$extension"; done < extensions.txt
